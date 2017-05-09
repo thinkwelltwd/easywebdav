@@ -12,7 +12,7 @@ properties = dict(
     classifiers = [
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3.3",
+        "Programming Language :: Python :: 3.6",
         ],
     description="A straight-forward WebDAV client, implemented using Requests",
     license="ISC",
@@ -24,6 +24,7 @@ properties = dict(
     data_files = [],
     install_requires=[
         "requests",
+        "six",
         ],
     entry_points=dict(
         console_scripts=[],
@@ -36,6 +37,7 @@ if "EASYWEBDAV_DEV" in os.environ:
         "nose",
         "yanc",
         "PyWebDAV",
+        "unittest2",
         ))
 
 setup(**properties)
